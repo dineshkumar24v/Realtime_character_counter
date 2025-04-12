@@ -5,7 +5,9 @@
 }
 body {
     height: 100vh;
-    background-color: #ad88c6;
+    background-image: url(bg.avif);
+    background-size: cover;
+    background-position: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +24,9 @@ body {
 }
 h2 {
     text-transform:capitalize;
+    text-align: center;
+    color: grey;
+    margin-bottom: 2rem;
 }
 .textarea {
     width: 100%;
@@ -31,7 +36,12 @@ h2 {
     font-size: 18px;
     padding: 8px;
     border-radius: 10px;
-    border: 2px solid grey;
+    border: 1.5px solid grey;
+    transition: 1s ease-in;
+    margin-bottom: 2rem;
+}
+.textarea:focus{
+    border: 2px solid blue;
 }
 .counter {
     display: flex;
